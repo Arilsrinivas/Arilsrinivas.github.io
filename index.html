@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,52 +8,245 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" href="s.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
+
+    <!-- Header -->
     <header>
         <div class="logo">
             <img src="s.png" alt="Aril Srinivas Logo" class="logo-img">
+            <h1>Aril Srinivas</h1>
         </div>
 
         <button class="nav-toggle" id="nav-toggle">
-            &#9776;
+            <i class="fas fa-bars"></i>
         </button>
-        
+
         <nav class="main-nav" id="main-nav">
             <ul>
-                <li><a class="btn" href="about.html">About</a></li>
-                <li><a class="btn" href="projects.html">Projects</a></li>
-                <li><a class="btn" href="contact.html">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        
-        <nav class="social-links">
-            <a href="https://github.com/Arilsrinivas" target="_blank" class="github-link" style="font-size: 40px;">
-                <i class="fab fa-github"></i>
-            </a>                
-            <a href="mailto:arilsrinivas8@gmail.com" class="email-link" style="font-size: 40px;">
-                <i class="fas fa-envelope"></i>
-            </a> 
-            <a href="https://www.linkedin.com/in/aril-srinivas" target="_blank" class="linkedin-link" style="font-size: 40px;">
-                <i class="fab fa-linkedin"></i>
-            </a>  
-        </nav>
     </header>
-    
 
-    <section>
-        <h2>Computer Science Student & Aspiring Animator</h2>
-        <p>Hi, I'm Aril Srinivas, a 2nd-year Computer Science student passionate about coding and animation. Explore my work and projects here!</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="animate-fade-in">
+            <h1>Hello, I'm Aril Srinivas</h1>
+            <p>Computer Science Student | AI & ML Enthusiast | Aspiring Animator</p>
+            <a href="#projects" class="btn-glow">View My Work</a>
+        </div>
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="animate-slide-up">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I am a Computer Science student at Malnad College of Engineering (VTU University), passionate about
+                    Artificial Intelligence and Machine Learning. I am a member of the IUCEE-EWB-MCE student chapter and
+                    have experience in React, SQL, and Python.</p>
+                <br>
+                <p>With a strong foundation in data-driven projects and web development, I aspire to pursue an MS at an
+                    Ivy League university. I am constantly learning and building new things, from web apps to IoT
+                    devices.</p>
+
+                <h3 style="margin-top: 2rem;">Education</h3>
+                <div class="timeline-item">
+                    <h4>Bachelor of Engineering in Computer Science (2023–2027)</h4>
+                    <p>Malnad College of Engineering | VTU University</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Data Science Intern</h4>
+                    <p>Tally Solutions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="animate-slide-up">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3><i class="fas fa-code"></i> Languages</h3>
+                <div class="skill-tags">
+                    <span>Python</span>
+                    <span>SQL</span>
+                    <span>C</span>
+                    <span>Java</span>
+                    <span>JavaScript</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                <div class="skill-tags">
+                    <span>React</span>
+                    <span>Three.js</span>
+                    <span>Tailwind CSS</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3><i class="fas fa-server"></i> Backend & DB</h3>
+                <div class="skill-tags">
+                    <span>APIs</span>
+                    <span>MySQL</span>
+                </div>
+            </div>
+            <div class="skill-card">
+                <h3><i class="fas fa-tools"></i> Other Tools</h3>
+                <div class="skill-tags">
+                    <span>Git/GitHub</span>
+                    <span>Blender</span>
+                    <span>AI Tools</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="animate-slide-up">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Agentic Framework for Tally</h3>
+                    <p>Built a supervisor architecture based agentic pipeline using Langchain. Retrieves data from local
+                        machines, gets responses from Tally software, and uses LLM to summarize results.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Personal Finance Dashboard</h3>
+                    <p>React Native dashboard app parsing SMS-based financial data. Used Python for processing and SQL
+                        for transaction storage, with real-time visualization.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>PDF Bank Statement Analyzer</h3>
+                    <p>Full stack platform to upload bank statements. Used Python and OpenAI API for categorization,
+                        stored results in SQL, and displayed on a React dashboard.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>E-Commerce Website</h3>
+                    <p>Designed and built a responsive React frontend with product filtering and cart features.
+                        Integrated SQL database for inventory management.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Smart Dustbin (IoT)</h3>
+                    <p>Automated waste segregation system using sensors and actuators. Programmed with Python and
+                        Arduino, with data logging in SQL.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>IUCEE Chapter Website</h3>
+                    <p>Built a sustainability-focused chapter website with a 3D interactive user interface using
+                        Three.js.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>Electric Jet Suit Prototype</h3>
+                    <p>Designed an electric-powered jet suit using five turbines and a 55 kWh battery, focusing on
+                        thrust optimization.</p>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3>EMG-Controlled Bionic Arm</h3>
+                    <p>Research on prosthetic arms controlled by electromyography signals, focusing on sensor technology
+                        and ML integration.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements & Certifications -->
+    <section id="achievements" class="animate-slide-up">
+        <h2 class="section-title">Achievements & Certifications</h2>
+        <div class="skills-grid"> <!-- Reusing grid layout -->
+            <div class="skill-card">
+                <h3><i class="fas fa-trophy"></i> Competitions</h3>
+                <ul style="list-style: disc; padding-left: 20px;">
+                    <li>Runner at Aeronox innovation competition (Anurag University).</li>
+                    <li>Winner of RoboSoccer (ME-RIISE Tech Fest).</li>
+                    <li>Participated in data visualization hackathon.</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3><i class="fas fa-certificate"></i> Certifications</h3>
+                <ul style="list-style: disc; padding-left: 20px;">
+                    <li>Dashboard Designing (CMRIT)</li>
+                    <li>Convivial Coding</li>
+                    <li>Web Development Workshop (IUCEE)</li>
+                    <li>Mastering Python (Dept of CSE)</li>
+                    <li>AI/ML Internship (Corizo)</li>
+                    <li>WordPress (Coursera)</li>
+                    <li>Web Development (Infosys Springboard)</li>
+                    <li>Prompt Engineering</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact">
+        <h2>Get In Touch</h2>
+        <p>Feel free to reach out for collaborations or just a friendly hello!</p>
+
+        <div class="social-links">
+            <a href="mailto:arilsrinivas8@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/Arilsrinivas" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/aril-srinivas" target="_blank" title="LinkedIn"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+
+        <p style="margin-top: 2rem; font-size: 0.9rem;">&copy; 2025 Aril Srinivas. All Rights Reserved.</p>
+    </footer>
+
     <script>
+        // Mobile Navigation Toggle
         const navToggle = document.getElementById('nav-toggle');
         const mainNav = document.getElementById('main-nav');
-    
-        navToggle.addEventListener('click', function() {
+
+        navToggle.addEventListener('click', function () {
             mainNav.classList.toggle('active');
         });
+
+        // Scroll Animation Observer
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.animationPlayState = 'running';
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-slide-up').forEach(section => {
+            section.style.animationPlayState = 'paused'; // Pause initially
+            observer.observe(section);
+        });
     </script>
-    
+
 </body>
+
 </html>
